@@ -31,8 +31,9 @@ class BurgerBuilder extends Component {
     }
 
     componentDidMount () {
-        axios.get( 'https://react-my-burger.firebaseio.com/ingredients.json' )
+        axios.get( 'https://react-my-burger-edcc3.firebaseio.com/ingredients.json' )
             .then( response => {
+                console.log(response);
                 this.setState( { ingredients: response.data } );
             } )
             .catch( error => {
@@ -109,6 +110,7 @@ class BurgerBuilder extends Component {
         }
         axios.post( '/orders.json', order )
             .then( response => {
+                //console.log(response);
                 this.setState( { loading: false, purchasing: false } );
             } )
             .catch( error => {
