@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.Lable {
+.Label {
     font-weight: bold;
     display: block;
     margin-bottom: 8px;
@@ -28,5 +28,5 @@
 
 .Invalid {
     border: 1px solid red;
-    background-color: #fda49a;
+    background-color: #FDA49A;
 }
